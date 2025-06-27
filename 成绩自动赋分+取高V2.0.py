@@ -23,7 +23,7 @@ for temp in range(len(df1)):   #确定赋分区间（表格里面填写的是可
         score[orignal_score]=[100,float(temp_low)]
     else:
         score[orignal_score]=[float(temp_score),float(temp_low)]
-    temp_score=temp_low
+    temp_score=temp_low-1
 check_jixian()  #检查赋分范围极限值合理性
 student_length=len(df2)
 for i in range(student_length):  #给予赋分并且结合首考取高（如果还没有参加首考的，把首考分数设成0）
